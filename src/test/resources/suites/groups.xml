@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Regression suite" verbose="1">
+    <test name="Api tests">
+        <groups>
+            <run>
+                <include name="sql"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="SqlInjectionsTests">
+                <methods>
+                    <exclude name="selectUserDepartmentTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
